@@ -453,6 +453,8 @@ img {
 
   border-radius: 4px;
   border: 1px solid var(--icons-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-customers {
@@ -464,10 +466,9 @@ img {
   border-color: #404bbf;
 }
 
-.customers-link:hover .icons-customers,
-.customers-link:focus .icons-customers {
-  fill: #404bbf;
-  border-color: #404bbf;
+.customers-link:hover,
+.customers-link:focus {
+  color: #404bbf;
 }
 
 .main-footer {
@@ -603,6 +604,11 @@ img {
   letter-spacing: 0.64px;
   cursor: pointer;
 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 12px 24px;
 
   border: 1px solid #e7e9fc;
@@ -630,6 +636,7 @@ img {
 
 .link-illustration {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-illustration:hover,
